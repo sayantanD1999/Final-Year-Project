@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Besley&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Assets/style/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <title>Recipe</title>
+  </head>
+
+  <body data-spy="scroll">
+    <section id="landing_page">
+      <div class="fixed_nav loggedout">
+        <div>
+          <h1 id="heading">Recipe</h1>
+        </div>
+        <div class="mid_nav">
+          <a href="#landing_page">Home</a>
+          <a href="#Indian"><p>Categories</p></a>
+          <a href="#about"><p>About</p></a>
+          <a href=""><p>Contact</p></a>
+        </div>
+        <div>
+          <button class="btn btn-success" onclick="login()">Log In</button>
+          <button class="btn btn-success" onclick="signup()">Sign Up</button>
+        </div>
+        
+      </div>
+      <!-- <div class="landing_text">
+        <h1>
+            Season everything with love
+        </h1>
+      </div> -->
+    </section>
+    
+    
+
+    <section id="about">
+      <div>
+        <div id="about_top_div">
+          <center>
+            <h2>Recipe</h2>
+          </center>
+          <center>
+            <b>A little about us and a brief explanation of our working</b>
+          </center>
+          <br />
+          <div id="line_seperation"></div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-md-5">
+            <img
+              src="./Assets/pics/About.jpg"
+              id="about_img"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="col-md-7">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+            suscipit quaerat magnam voluptates recusandae illo officia nam
+            maiores reiciendis ut cum quae sed dignissimos incidunt consectetur
+            asperiores quia accusamus voluptatibus? Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Indian_section">
+      <div id="Indian">
+        <center>
+          <h1 id="indian-header">Explore</h1>
+        </center>
+
+        <div>
+          <div class="card-div">
+            <img class="card-img" src="./Assets/pics/bg3.jpg" alt="" />
+            <h2>Header</h2>
+            <div class="card_details">
+              <p><b>Breakfast</b></p>
+              <p><b>Verified</b> <i class="fas fa-check-circle"></i></p>
+            </div>
+
+            <div class="card-content">
+              <div class="small_box">
+                <i class="icons far fa-clock"></i>
+                <p>30 mins</p>
+              </div>
+              <div class="small_box">
+                <i class="icons fas fa-utensils"></i>
+                <p>Serving</p>
+              </div>
+              <div class="small_box">
+                <i class="icons far fa-grin-tongue"></i>
+                <p>Beginner</p>
+              </div>
+            </div>
+            <div class="card-btn_div">
+              <button class="card-btn">
+                Check Recipe <i class="fas fa-arrow-circle-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card-div">
+            <img class="card-img" src="./Assets/pics/north-indian.jpg" alt="" />
+            <h2>Header</h2>
+            <div class="card_details">
+              <p><b>Breakfast</b></p>
+              <p><b>Verified</b> <i class="fas fa-check-circle"></i></p>
+            </div>
+
+            <div class="card-content">
+              <div class="small_box">
+                <i class="icons far fa-clock"></i>
+                <p>30 mins</p>
+              </div>
+              <div class="small_box">
+                <i class="icons fas fa-utensils"></i>
+                <p>Serving</p>
+              </div>
+              <div class="small_box">
+                <i class="icons far fa-grin-tongue"></i>
+                <p>Beginner</p>
+              </div>
+            </div>
+            <div class="card-btn_div">
+              <button class="card-btn">
+                Check Recipe <i class="fas fa-arrow-circle-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card-div">
+            <img class="card-img" src="./Assets/pics/south-indian.jpg" alt="" />
+            <h2>Header</h2>
+            <div class="card_details">
+              <p><b>Breakfast</b></p>
+              <p><b>Verified</b> <i class="fas fa-check-circle"></i></p>
+            </div>
+
+            <div class="card-content">
+              <div class="small_box">
+                <i class="icons far fa-clock"></i>
+                <p>30 mins</p>
+              </div>
+              <div class="small_box">
+                <i class="icons fas fa-utensils"></i>
+                <p>Serving</p>
+              </div>
+              <div class="small_box">
+                <i class="icons far fa-grin-tongue"></i>
+                <p>Beginner</p>
+              </div>
+            </div>
+            <div class="card-btn_div">
+              <button class="card-btn">
+                Check Recipe <i class="fas fa-arrow-circle-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="get-in">
+      <div class="box" id="log-in">
+        <div id="top_design"></div>
+        <form id="login_form">
+          <label for="login-email">
+            <b> Enter your registered email address </b>
+          </label>
+          <br />
+          <input
+            type="email"
+            name=""
+            class="inp"
+            id="login-email"
+            placeholder="Email"
+            required
+          />
+          <br />
+          <label for="login_pswd"> <b> Enter password </b> </label>
+          <br />
+          <input
+            type="password"
+            name=""
+            class="inp"
+            placeholder="Password"
+            id="login-pswd"
+            required
+          />
+          <br />
+          <input
+            type="checkbox"
+            name=""
+            id="login_show_password"
+            onclick="toggle_password(this.id)"
+          />
+          Show Password
+          <p class="wrong_text">Incorrect Details</p>
+          <br />
+          <button type="submit" class="btn2">Log In</button>
+        </form>
+      </div>
+
+      <div class="box" id="sign-up">
+        <div class="signup-container">
+          <div class="div1" id="img_div">
+            <div id="img_container" onclick="get_img()">
+              <!-- <i class="far fa-user"></i> -->
+              <img src="#" id="set_img" alt="" />
+            </div>
+          </div>
+          <div class="div2">
+            <form id="signup_form">
+              <label for="name"> <b>Enter your full name</b> </label>
+              <br />
+              <input type="text" class="inp" id="name" placeholder="Name" />
+              <br />
+              <label for="mail"> <b> Enter your email address </b></label><br />
+              <input
+                type="email"
+                name=""
+                class="inp"
+                placeholder="Email"
+                id="mail"
+              /><br />
+              <label for="signup_pswd"> <b> Enter password </b></label> <br />
+              <input
+                type="password"
+                name=""
+                class="inp"
+                placeholder="Password"
+                id="signup_pswd"
+                class="sl"
+              />
+              <div
+                class="sl"
+                id="pattern"
+                data-toggle="tooltip"
+                data-placement="bottom"
+                title="Must contain 6-16 characters 
+                                Must contain an uppercase character
+                                Must contain a lowercase character
+                                Must contain a special character
+                                Must contain a number"
+              >
+                ?
+              </div>
+              <br />
+              <label for="signup_re-pswd"> <b> Confirm password </b> </label
+              ><br />
+              <input
+                type="password"
+                name=""
+                class="inp"
+                onkeyup="check_password_similarity()"
+                placeholder="Re-enter password"
+                id="signup_re-pswd"
+              /><br />
+              <p id="pswd_msg">Passwords don't match</p>
+              <input
+                type="checkbox"
+                name=""
+                id="signup_show_password"
+                onclick="toggle_password(this.id)"
+              />
+              Show Password
+              <input
+                type="file"
+                style="visibility: hidden"
+                name=""
+                id="get_img"
+                onclick="getting_img(this)"
+              />
+              <button type="submit" class="btn2">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="add_recipe">
+      <div class="add_recipe_content">
+        <div>
+          <div class="add_recipe_upperdiv">
+            <img src="./Assets/pics/cook.png" height="350" width="350" alt="" />
+          </div>
+          <div class="add_recipe_lowerdiv">
+            <h1>
+              Now you can share your own recipe and spread the joy of cooking.
+            </h1>
+            <div>
+              <button id="share_recipe_btn">
+                Let's share <i class="fas fa-arrow-circle-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="Assets/javascript/index.js"></script>
+  </body>
+</html>

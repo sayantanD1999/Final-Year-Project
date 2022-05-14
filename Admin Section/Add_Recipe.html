@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Assets/style/Add_Recipe.css">
+    <script src="./Assets/javascript/Add_Recipe.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="top_div">
+        <form id="add_recipe_form">
+            <fieldset>
+                <legend>
+                    <h3>Add Your Own Recipe</h3>
+                </legend>
+                <div id="chef_img_container">
+                    <img id="user_img" src="./Assets/pics/user2.png" height="100" width="150" alt="">
+                </div>
+                <center>
+                    <label for="file-upload" onclick="getting_user_img(this)" class="custom-file-upload">
+                        Add chef's Image
+                    </label>
+                </center>
+
+                <input id="file-upload" style="visibility:hidden" type="file"/>
+                <br>
+                <label for="name">Name *</label>
+                <input class="inp" type="text" placeholder="First Name" id="fname">
+                <input class="inp" type="text" placeholder="Last Name" id="lname">
+                <br>
+                <label for="email">Email *</label>
+                <input class="inp2" type="email" name="" id="email" placeholder="e.g hello@gmail.com">
+                <br>
+                <label for="contact">Contact Number</label>
+                <input class="inp" type="number" name="" id="contact" placeholder="Contact Number" inputmode="tel">
+                <br>
+                <label for="recipe_name">Recipe Name* </label>
+                <input class="inp" type="text" placeholder="Title" id="recipe_name">
+                <br>
+                <label for="recipe_name">Recipe Time* </label>
+                <input class="inp" type="text" placeholder="Time" id="recipe_name">
+                <br>
+                <label for="recipe_name">Recipe Type*</label>
+                    Breakfast <input type="checkbox" name="" id="">
+                    Dinner <input type="checkbox" name="" id="">
+                    Lunch <input type="checkbox" name="" id="">
+                    Snack <input type="checkbox" name="" id="">
+                
+                <br>
+                <label for="recipe_img">Recipe image(s)</label>
+                <input type="file" name="" class="inp" id="recipe_img" multiple >
+                <br>
+                <label for="quote">Add any message</label>
+                <br>
+                <br>
+                <textarea name="" id="quote"  cols="30" rows="5" placeholder="Start Expressing..." ></textarea>
+        </form>
+        </fieldset>
+
+        <div>
+            <img src="./Assets/pics/taxi-chef.png" height="400" width="360" alt="">
+        </div>
+        
+    </div>
+
+
+    <div class="container">
+        <div class="ingrdients">
+            <fieldset>
+                <legend>
+                    <h2>Ingredients</h2>
+                </legend>
+                <div id="ingredients">
+                    <input class="inp2" type="text" placeholder="Ingredient 1">
+                    <input class="inp2" type="text" placeholder="Ingredient 2">
+                    <input class="inp2" type="text" placeholder="Ingredient 3">
+                </div>
+                <button onclick="add_ingredient()">Add Ingredient <i class="fas fa-plus"></i></button>
+            </fieldset>
+        </div>
+
+        <div class="procedure">
+            <fieldset>
+                <legend>
+                    <h2>Procedure</h2>
+                </legend>
+                <div id="steps">
+                    <input class="inp2" type="text" placeholder="Step 1">
+                    <input class="inp2" type="text" placeholder="Step 2">
+                    <input class="inp2" type="text" placeholder="Step 3">
+                </div>
+                <button onclick="add_steps()">Add Procedure <i class="fas fa-plus"></i></button>
+            </fieldset>
+        </div>
+    </div>
+    <div class="submit_btn_div">
+        <button id="submit_recipe">Submit</button>
+    </div>
+</body>
+</html>

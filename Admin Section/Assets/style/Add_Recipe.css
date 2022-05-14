@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 10px;
+        /* background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%); */
+        /* background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); */
+        background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+#chef_img_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-file-upload {
+    margin-top: 10px;
+    background-color: rgb(233, 187, 38);
+    border: 1px solid rgb(175, 172, 172);
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+#get_user_img{
+    size: 40px;
+}
+.top_div{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.top_div>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#add_recipe_form{
+    width: 100%;
+}
+
+fieldset{
+border-radius: 15px;    
+border-color: rgb(0, 0, 0);
+outline: none;
+}
+
+.inp{
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    width: 31.5%;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.inp2{
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    width: 66%;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#quote{
+    outline: none;
+    border-radius: 3px;
+    width: 60%;
+    padding-left: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+
+.ingredients, .prceddure{
+    margin: auto;
+}
+
+.cross{
+    font-size:30px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #fff;
+}
+
+button{
+    height: 40px;
+    width: 160px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: bolder;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    background-color:#0f8e97;
+}
+.submit_btn_div{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

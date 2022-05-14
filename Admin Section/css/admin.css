@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+    
+    padding:1%;
+    width:80%;
+    margin: 0 auto;
+}
+.text-center{
+    text-align:center;
+
+}
+.clearflix{
+    float: none;
+    clear: both;
+}
+.tbl-full{
+    width: 100%;
+}
+.tbl-30{
+    width: 30%;
+    
+    
+    white-space: nowrap ;
+   
+}
+table tr th{
+    border-bottom: 1px solid black;
+    padding: 1%;
+    text-align: left;
+}
+table tr td{
+    padding: 1%;
+}
+.btn-primary{
+    background-color: #B53471;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-primary:hover{
+    background-color:#e66767;
+}
+.btn-secondary{
+    background-color: #10ac84;
+    padding: 1%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-secondary:hover{
+    background-color: #01a3a4;
+}
+.btn-danger{
+    background-color: #b33939;
+    padding: 1%;
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-danger:hover{
+    background-color: #EA2027;
+}
+
+.success{
+
+    color:#009432;
+    
+
+}
+.error{
+    color: #e74c3c;
+}
+/*menu*/
+.menu{
+    text-align: center;
+    border-bottom: 1px solid darkmagenta;
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li{
+    display: inline;
+    padding: 1%;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #6F1E51;
+
+}
+.menu ul li a:hover{
+    color: #0652DD;
+}
+/*main content*/
+.main-content{
+    
+    /*background-color: #fab1a0;*/
+    /*background-color: #c7ecee;*/
+    /*background-color: blanchedalmond;
+    background-color: #b8e994;*/
+    background-color: #dff9fb;
+    padding: 3% 0;
+}
+.col-4{
+    width: 18%;
+    background-color: #ffb8b8;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+}
+
+/*footer*/
+.footer{
+    /*background-color:#FDA7DF;
+    background-color: cadetblue;
+    background-color:#079992;*/
+    background-color: #D980FA;
+}
+/*css for login*/
+.login{
+    width: 30%;
+    border: 1px solid gray;
+    margin: 10% auto;
+    padding: 2%;
+}
